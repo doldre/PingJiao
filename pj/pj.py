@@ -47,7 +47,8 @@ def teach_evaluate(zjh,mm):
         #    print(ss)
         #print(item.attrs["name"])
 
-    msg.append("评教成功")
+    if msg == []:
+        msg.append("评教失败")
     return msg
 
 if __name__ == "__main__":
