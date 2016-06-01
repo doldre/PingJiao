@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django import forms
 from .pj import teach_evaluate
 from django.http import HttpResponse
+import logging
 # Create your views here.
 
 class UserForm(forms.Form):
@@ -13,6 +14,8 @@ def index(request):
         form = UserForm(data=request.POST)
         if form.is_valid():
             msg = teach_evaluate(request.POST['username'], request.POST['password'])
+            logging.info(request.POST['username'])
+            logging.info(msg)
             return render(request, 'response.html', {'message':msg})
     else:
         form = UserForm()

@@ -1,0 +1,12 @@
+Wed, 01 Jun 2016 08:55:59 connectionpool.py[line:213] INFO Starting new HTTP connection (1): zhjw.scu.edu.cn
+Wed, 01 Jun 2016 08:55:59 connectionpool.py[line:395] DEBUG "POST /loginAction.do HTTP/1.1" 200 None
+Wed, 01 Jun 2016 08:55:59 connectionpool.py[line:213] INFO Starting new HTTP connection (1): zhjw.scu.edu.cn
+Wed, 01 Jun 2016 08:55:59 connectionpool.py[line:395] DEBUG "GET /jxpgXsAction.do?oper=listWj&pageSize=300 HTTP/1.1" 500 None
+Wed, 01 Jun 2016 08:55:59 views.py[line:17] INFO mathon
+Wed, 01 Jun 2016 08:55:59 views.py[line:18] INFO ['评教失败']
+Wed, 01 Jun 2016 08:56:18 connectionpool.py[line:213] INFO Starting new HTTP connection (1): zhjw.scu.edu.cn
+Wed, 01 Jun 2016 08:56:18 connectionpool.py[line:395] DEBUG "POST /loginAction.do HTTP/1.1" 200 None
+Wed, 01 Jun 2016 08:56:18 connectionpool.py[line:213] INFO Starting new HTTP connection (1): zhjw.scu.edu.cn
+Wed, 01 Jun 2016 08:56:18 connectionpool.py[line:395] DEBUG "GET /jxpgXsAction.do?oper=listWj&pageSize=300 HTTP/1.1" 500 None
+Wed, 01 Jun 2016 08:56:18 views.py[line:17] INFO mathon
+Wed, 01 Jun 2016 08:56:18 views.py[line:18] INFO ['评教失败']
