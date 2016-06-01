@@ -16,7 +16,7 @@ def index(request):
             msg = teach_evaluate(request.POST['username'], request.POST['password'])
             logging.warning("USERNAME: " + request.POST['username'])
             for item in msg:
-                logging.warning(item.decode('utf-8'))
+                logging.warning(item.encode('ascii'))
             return render(request, 'response.html', {'message':msg})
     else:
         form = UserForm()
