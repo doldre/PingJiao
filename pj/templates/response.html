@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评教</title>
+</head>
+<body>
+{% for item in message %}
+<label>{{ item }}</label> <br />
+{% endfor %}
+</body>
