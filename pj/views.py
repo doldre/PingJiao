@@ -14,8 +14,8 @@ def index(request):
         form = UserForm(data=request.POST)
         if form.is_valid():
             msg = teach_evaluate(request.POST['username'], request.POST['password'])
-            logging.info("USERNAME: " + request.POST['username'])
-            logging.info(msg)
+            logging.warning("USERNAME: " + request.POST['username'])
+            logging.warning(msg)
             return render(request, 'response.html', {'message':msg})
     else:
         form = UserForm()
