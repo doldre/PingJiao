@@ -13,7 +13,6 @@ def index(request):
         form = UserForm(data=request.POST)
         if form.is_valid():
             msg = teach_evaluate(request.POST['username'], request.POST['password'])
-            print(msg)
             return render(request, 'response.html', {'message':msg})
     else:
         form = UserForm()
