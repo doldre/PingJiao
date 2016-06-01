@@ -5,8 +5,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 class UserForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField()
+    username = forms.CharField(label='学号')
+    password = forms.CharField(label='密码', widget=forms.PasswordInput)
 
 def index(request):
     if request.method == 'POST':
