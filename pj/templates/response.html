@@ -9,10 +9,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>评教</title>
+    <title>一键评教</title>
 </head>
 <body>
 {% for item in message %}
+{% if item="评教失败"}
+<p>是服务器开了小差，还是已经完成呢？赶紧去<a href="http://202.115.47.141/login.jsp">(点我前往教务处)查询一番吧<p>
+{% end if %}
 <label>{{ item }}</label> <br />
 {% endfor %}
+
 </body>

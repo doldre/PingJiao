@@ -1,3 +1,4 @@
+#coding:utf-8
 from django.shortcuts import render
 from django import forms
 from .pj import teach_evaluate
